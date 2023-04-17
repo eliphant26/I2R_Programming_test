@@ -1,0 +1,17 @@
+int RED = 9;
+int GREEN = 10;
+int BLUE = 11;
+
+void setup() {
+   pinMode(GREEN,OUTPUT);
+   pinMode(RED,OUTPUT);
+   pinMode(BLUE,OUTPUT);
+   
+   analogWrite(GREEN,2);
+   analogWrite(RED,128);
+   analogWrite(BLUE,16);
+}
+
+void loop() {
+    
+}

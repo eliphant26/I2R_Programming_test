@@ -1,0 +1,25 @@
+int yellowLED = 3;
+int whiteLED = 10;
+
+
+
+void setup() {
+   pinMode(yellowLED, OUTPUT); 
+   pinMode(whiteLED, OUTPUT); 
+   
+   analogWrite(yellowLED,HIGH);
+   analogWrite(whiteLED,HIGH);
+   delay(1000);
+   analogWrite(yellowLED,LOW);
+   analogWrite(whiteLED,LOW);
+}
+
+void loop() {
+  analogWrite(yellowLED,HIGH);
+  delay(2000);
+  analogWrite(yellowLED,LOW);
+  analogWrite(whiteLED,HIGH);
+  delay(2000);
+  analogWrite(whiteLED,LOW);
+  
+}
